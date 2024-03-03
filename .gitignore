@@ -1,0 +1,5 @@
+# Módulos de dependencia
+node_modules/
+
+# Dependencias y módulos locales
+package-lock.json

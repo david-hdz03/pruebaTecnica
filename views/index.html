@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZipCode Checker</title>
+</head>
+<body>
+  <h1>ZipCode Checker</h1>
+  <input type="text" id="zipCodeInput" placeholder="Enter ZIP Code ...">
+  <button id="submitButton">Submit</button>
+  <div id="result"></div>
+
+  <script>
+    document.getElementById('zipCodeInput').addEventListener('keyup', function(event) {
+      if (event.key === 'Enter') {
+        getZipCodeDetails();
+      }
+    });
+
+    document.getElementById('submitButton').addEventListener('click', function() {
+      getZipCodeDetails();
+    });
+
+    function getZipCodeDetails() {
+      const zipCode = document.getElementById('zipCodeInput').value;
+
+      // Redirect to the zipCode page
+      window.location.href = `/zipCode/${zipCode}`;
+    }
+  </script>
+</body>
+</html>
