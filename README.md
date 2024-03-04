@@ -1,8 +1,8 @@
 # pruebaTecnica
 
-#Instalación de dependencias
+#Instalación de dependencias  
 npm install
 
-#Inicio del servidor
+#Inicio del servidor  
 node ./index.js
 
